@@ -51,6 +51,8 @@ We include inference code to run our retrieval-augmented diffusion models (RDMs)
 
 
 To get started, install the additionally required python packages into your `ldm` environment
+
+！！EDIT：just pip install transformers  without special version
 ```shell script
 pip install transformers==4.19.2 scann kornia==0.6.4 torchmetrics==0.6.0
 pip install git+https://github.com/arogozhnikov/einops.git
