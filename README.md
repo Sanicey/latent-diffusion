@@ -37,6 +37,7 @@ A suitable [conda](https://conda.io/) environment named `ldm` can be created
 and activated with:
 
 ```
+source ~/anaconda3/bin/activate
 conda env create -f environment.yaml
 conda activate ldm
 ```
