@@ -38,6 +38,7 @@ and activated with:
 
 ```
 source ~/anaconda3/bin/activate
+/etc/init.d/ssh start
 git --version
 sudo apt-get install git
 conda env create -f environment.yaml
