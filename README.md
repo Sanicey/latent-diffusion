@@ -38,6 +38,8 @@ and activated with:
 
 ```
 source ~/anaconda3/bin/activate
+git --version
+sudo apt-get install git
 conda env create -f environment.yaml
 conda activate ldm
 ```
