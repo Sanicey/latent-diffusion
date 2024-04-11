@@ -44,6 +44,7 @@ and activated with:
 ```
 ```
 docker run --name ldm_0 --gpus all -t -i -d -p 3316:22 -v E:\DataSet:/home/DataSet -v E:\Project:/home/Project ubuntu
+sudo apt install nvidia-cuda-toolkit
 source ~/anaconda3/bin/activate
 /etc/init.d/ssh start
 git --version
