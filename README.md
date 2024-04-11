@@ -31,12 +31,19 @@
 - More pre-trained LDMs are available: 
   - A 1.45B [model](#text-to-image) trained on the [LAION-400M](https://arxiv.org/abs/2111.02114) database.
   - A class-conditional model on ImageNet, achieving a FID of 3.6 when using [classifier-free guidance](https://openreview.net/pdf?id=qw8AKxfYbI) Available via a [colab notebook](https://colab.research.google.com/github/CompVis/latent-diffusion/blob/main/scripts/latent_imagenet_diffusion.ipynb) [![][colab]][colab-cin].
-  
+
 ## Requirements
 A suitable [conda](https://conda.io/) environment named `ldm` can be created
 and activated with:
-
+### step
 ```
+1.make sure the container can use the gpus
+2.install cuda
+3.conda
+4.ssh
+```
+```
+docker run --name ldm_0 --gpus all -t -i -d -p 3316:22 -v E:\DataSet:/home/DataSet -v E:\Project:/home/Project ubuntu
 source ~/anaconda3/bin/activate
 /etc/init.d/ssh start
 git --version
