@@ -43,7 +43,8 @@ and activated with:
 4.ssh
 ```
 ```
-docker run --name ldm_0 --gpus all -t -i -d -p 3316:22 -v E:\DataSet:/home/DataSet -v E:\Project:/home/Project ubuntu
+docker pull nvidia/cuda:12.3.2-cudnn9-devel-ubuntu22.04
+docker run --name ldm_1 -i -t -d --gpus all --shm-size 40G -p 3316:22 -v E:\dataset:/home/dataset -v E:\project:/home/project nvidia/cuda:12.3.2-cudnn9-devel-ubuntu22.04 bash
 sudo apt install nvidia-cuda-toolkit
 source ~/anaconda3/bin/activate
 /etc/init.d/ssh start
