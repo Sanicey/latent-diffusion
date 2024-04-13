@@ -43,6 +43,7 @@ and activated with:
 4.ssh
 ```
 ```
+docker run --gpus=all -p 127.0.0.1:9000:8080 us-docker.pkg.dev/colab-images/public/runtime
 docker pull nvidia/cuda:12.3.2-cudnn9-devel-ubuntu22.04
 docker run --name ldm_1 -i -t -d --gpus all --shm-size 40G -p 3316:22 -v E:\dataset:/home/dataset -v E:\project:/home/project nvidia/cuda:12.3.2-cudnn9-devel-ubuntu22.04 bash
 docker run --name ldm_gui -i -t -d --gpus all -e DISPLAY=$DISPLAY --shm-size 40G -p 3317:22 -v E:\dataset:/home/dataset -v E:\project:/home/project ubuntu_gui
